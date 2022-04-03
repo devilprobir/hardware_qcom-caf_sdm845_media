@@ -12482,8 +12482,8 @@ bool omx_vdec::allocate_color_convert_buf::set_color_format(
         } else {
             DEBUG_PRINT_ERROR("Unsupported output color format for c2d (%d)",
                               dest_color_format);
-            status = false;
             enabled = false;
+            //status = false;
         }
     } else {
         enabled = false;
